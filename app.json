@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "Uncall",
+    "slug": "uncall",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0A0A0A"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.markosiilak.uncall",
+      "infoPlist": {
+        "NSContactsUsageDescription": "This app needs access to your contacts to whitelist them and allow their calls through."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0A0A0A"
+      },
+      "package": "com.markosiilak.uncall",
+      "permissions": [
+        "READ_CONTACTS",
+        "ANSWER_PHONE_CALLS",
+        "READ_PHONE_STATE",
+        "MODIFY_PHONE_STATE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-contacts",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 34,
+            "targetSdkVersion": 34,
+            "buildToolsVersion": "34.0.0"
+          }
+        }
+      ]
+    ]
+  }
+}
