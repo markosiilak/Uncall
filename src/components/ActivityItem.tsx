@@ -15,6 +15,10 @@ interface ActivityItemProps {
 
 export const ActivityItem = ({ item }: ActivityItemProps) => {
   const [isRevealed, setIsRevealed] = useState(false);
+  const formatNumber = (num: string) => {
+    if (isRevealed || num === i18n.t('privateNumber')) return num;
+    return num.slice(0, -3) + '...';
+  };
 
   return (
     <TouchableOpacity
@@ -28,14 +32,7 @@ export const ActivityItem = ({ item }: ActivityItemProps) => {
           <History color="#aaa" size={20} />
         </View>
         <View style={styles.activityInfo}>
-          <Text
-            style={[
-              styles.activityNumber,
-              !isRevealed && item.number !== i18n.t('privateNumber') && styles.blurredText,
-            ]}
-          >
-            {item.number}
-          </Text>
+          <Text style={styles.activityNumber}>{formatNumber(item.number)}</Text>
           <Text style={styles.activityTime}>{item.time}</Text>
         </View>
         <Text style={styles.activityStatus}>{item.status}</Text>
@@ -80,16 +77,5 @@ const styles = StyleSheet.create({
     color: '#FF5252',
     fontSize: 12,
     fontWeight: '700',
-  },
-  blurredText: {
-    color: 'rgba(255,255,255,0.1)',
-    textShadowColor: 'rgba(255,255,255,0.8)',
-    textShadowRadius: 8,
-    ...Platform.select({
-      web: {
-        // @ts-ignore
-        filter: 'blur(5px)',
-      },
-    }),
   },
 });
