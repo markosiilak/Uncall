@@ -3,7 +3,7 @@ import { I18n } from 'i18n-js';
 
 export const translations = {
   en: {
-    appName: 'Uncall',
+    appName: 'FriendCall',
     tagline: 'Intelligent Call Protection',
     protectionActive: 'PROTECTION ACTIVE',
     protectionInactive: 'PROTECTION INACTIVE',
@@ -22,8 +22,8 @@ export const translations = {
     protectionSettings: 'Protection Settings',
     privacyPolicy: 'Privacy Policy',
     termsOfService: 'Terms of Service',
-    privacyContent: 'Uncall respects your privacy. We do not store your contacts or call logs on any server. All call screening logic happens locally on your device.',
-    termsContent: 'By using Uncall, you agree that the app is provided "as is". We are not responsible for any missed calls or technical issues. Always keep your whitelist updated.',
+    privacyContent: 'FriendCall respects your privacy. We do not store your contacts or call logs on any server. All call screening logic happens locally on your device.',
+    termsContent: 'By using FriendCall, you agree that the app is provided "as is". We are not responsible for any missed calls or technical issues. Always keep your whitelist updated.',
     back: 'Back',
     manageWhitelist: 'Manage Whitelist',
     autoBlockUnknown: 'Auto-Block Unknown',
@@ -31,7 +31,7 @@ export const translations = {
     searchContacts: 'Search contacts...',
   },
   et: {
-    appName: 'Uncall',
+    appName: 'FriendCall',
     tagline: 'Nutikas kõnekaitse',
     protectionActive: 'KAITSE AKTIIVNE',
     protectionInactive: 'KAITSE MITTEAKTIIVNE',
@@ -50,8 +50,8 @@ export const translations = {
     protectionSettings: 'Kaitse seaded',
     privacyPolicy: 'Privaatsuspoliitika',
     termsOfService: 'Kasutustingimused',
-    privacyContent: 'Uncall austab teie privaatsust. Me ei salvesta teie kontakte ega kõneloge üheski serveris. Kogu kõnefiltreerimine toimub lokaalselt teie seadmes.',
-    termsContent: 'Uncalli kasutades nõustute, et rakendust pakutakse "nagu on". Me ei vastuta vastamata jäänud kõnede ega tehniliste probleemide eest.',
+    privacyContent: 'FriendCall austab teie privaatsust. Me ei salvesta teie kontakte ega kõneloge üheski serveris. Kogu kõnefiltreerimine toimub lokaalselt teie seadmes.',
+    termsContent: 'FriendCalli kasutades nõustute, et rakendust pakutakse "nagu on". Me ei vastuta vastamata jäänud kõnede ega tehniliste probleemide eest.',
     back: 'Tagasi',
     manageWhitelist: 'Halda valget nimekirja',
     autoBlockUnknown: 'Blokeeri tundmatud',

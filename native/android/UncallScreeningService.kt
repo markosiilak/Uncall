@@ -1,4 +1,4 @@
-package com.markosiilak.uncall
+package com.markosiilak.friendcall
 
 import android.telecom.Call
 import android.telecom.CallScreeningService
@@ -6,7 +6,7 @@ import android.provider.ContactsContract
 import android.net.Uri
 import android.content.Context
 
-class UncallScreeningService : CallScreeningService() {
+class FriendCallScreeningService : CallScreeningService() {
 
     override fun onScreenCall(callDetails: Call.Details) {
         val phoneNumber = callDetails.handle?.schemeSpecificPart

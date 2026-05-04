@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "🚀 Starting Uncall development environment setup..."
+echo "🚀 Starting FriendCall development environment setup..."
 
 # 1. Install dependencies
 echo "📦 Checking and installing modules..."

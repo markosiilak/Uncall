@@ -1,6 +1,6 @@
-# Uncall 🛡️
+# FriendCall 🛡️
 
-Uncall is a premium, privacy-focused mobile application built with Expo (React Native) designed to protect users from scam and spam calls by filtering incoming calls against the device's contacts and a custom whitelist.
+FriendCall is a premium, privacy-focused mobile application built with Expo (React Native) designed to protect users from scam and spam calls by filtering incoming calls against the device's contacts and a custom whitelist.
 
 ## ✨ Key Features
 

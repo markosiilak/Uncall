@@ -44,7 +44,7 @@ if (getRNMinorVersion() >= 75) {
   }
 }
 
-rootProject.name = 'Uncall'
+rootProject.name = 'FriendCall'
 
 dependencyResolutionManagement {
   versionCatalogs {

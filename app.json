@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Uncall",
-    "slug": "uncall",
+    "name": "FriendCall",
+    "slug": "friendcall",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -13,7 +13,7 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.markosiilak.uncall",
+      "bundleIdentifier": "com.markosiilak.friendcall",
       "infoPlist": {
         "NSContactsUsageDescription": "This app needs access to your contacts to whitelist them and allow their calls through."
       }
@@ -23,7 +23,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#0A0A0A"
       },
-      "package": "com.markosiilak.uncall",
+      "package": "com.markosiilak.friendcall",
       "permissions": [
         "READ_CONTACTS",
         "ANSWER_PHONE_CALLS",
