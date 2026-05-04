@@ -13,17 +13,20 @@ import {
 import { Shield, Users, ChevronRight, X, ChevronLeft, Search, UserPlus, CheckCircle2 } from 'lucide-react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { LanguageSwitcher } from './LanguageSwitcher';
 import i18n from '../constants/i18n';
 import { useContacts } from '../hooks/useContacts';
 
 interface SettingsModalProps {
   isVisible: boolean;
   onClose: () => void;
+  currentLocale: string;
+  onLanguageChange: (locale: string) => void;
 }
 
 type ViewType = 'main' | 'privacy' | 'terms' | 'whitelist';
 
-export const SettingsModal = ({ isVisible, onClose }: SettingsModalProps) => {
+export const SettingsModal = ({ isVisible, onClose, currentLocale, onLanguageChange }: SettingsModalProps) => {
   const [activeView, setActiveView] = useState<ViewType>('main');
   const [isAutoBlockEnabled, setIsAutoBlockEnabled] = useState(true);
   const [searchQuery, setSearchQuery] = useState('');
@@ -179,6 +182,11 @@ export const SettingsModal = ({ isVisible, onClose }: SettingsModalProps) => {
             <Text style={styles.settingLabel}>{i18n.t('termsOfService')}</Text>
             <ChevronRight color="#333" size={20} />
           </TouchableOpacity>
+        </View>
+
+        <View style={styles.settingGroup}>
+          <Text style={styles.settingGroupTitle}>{i18n.t('language') || 'Language'}</Text>
+          <LanguageSwitcher currentLocale={currentLocale} onLanguageChange={onLanguageChange} />
         </View>
 
         <View style={styles.versionContainer}>

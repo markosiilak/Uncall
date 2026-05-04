@@ -30,9 +30,8 @@ export const LanguageSwitcher = ({ currentLocale, onLanguageChange }: LanguageSw
 const styles = StyleSheet.create({
   languageContainer: {
     flexDirection: 'row',
-    justifyContent: 'center',
     alignItems: 'center',
-    marginTop: 30,
+    marginTop: 8,
     marginBottom: 10,
   },
   langButton: {

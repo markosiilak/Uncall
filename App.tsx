@@ -17,7 +17,6 @@ import { Shield } from './src/components/Shield';
 import { StatCard } from './src/ui/StatCard';
 import { ActivityItem } from './src/components/ActivityItem';
 import { SettingsModal } from './src/components/SettingsModal';
-import { LanguageSwitcher } from './src/components/LanguageSwitcher';
 
 // Hooks & Constants
 import { useContacts } from './src/hooks/useContacts';
@@ -116,10 +115,14 @@ export default function App() {
           <Text style={styles.infoText}>{i18n.t('iosInfo')}</Text>
         </TouchableOpacity>
 
-        <LanguageSwitcher currentLocale={locale} onLanguageChange={changeLanguage} />
       </ScrollView>
 
-      <SettingsModal isVisible={isSettingsVisible} onClose={() => setIsSettingsVisible(false)} />
+      <SettingsModal
+        isVisible={isSettingsVisible}
+        onClose={() => setIsSettingsVisible(false)}
+        currentLocale={locale}
+        onLanguageChange={changeLanguage}
+      />
     </SafeAreaView>
   );
 }
